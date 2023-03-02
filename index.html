@@ -9,25 +9,26 @@
     <title>Oriflame Cosmetics | Oriflame Cosmetics</title>
 </head>
 <body>
-    <header>
-        <div class="container-fluid m-0 p-4 pb-3 position-fixed top-0">
+    <header class="position-relative w-100">
+        <!-- initialize header -->
+        <div class="container-fluid m-0 p-4 pb-2 pt-3 position-fixed top-0">
             <div class="row header m-0">
                 <div class="col-3 text-center left">
                     <div class="row d-flex align-items-center">
-                        <div class="pe-0 col d-flex flex-column justify-content-center align-items-center">
+                        <div class="menusign pe-0 col d-flex flex-column justify-content-center align-items-center">
                             <div></div>
                             <div></div>
                             <div></div>
                         </div>
-                        <div class="col ps-0"><span class="cur"><svg width="28px" height="28px" fill="#777777" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="UserIcon"><path d="M12 13.032c-3.758 0-6.188 2.023-6.188 5.155 0 1.964 5.154 2.063 6.188 2.063s6.188-.099 6.188-2.063c0-3.132-2.429-5.155-6.188-5.155zm0 6.187c-3.499 0-5.086-.73-5.156-1.031 0-3.04 2.663-4.124 5.156-4.124 2.492 0 5.156 1.084 5.156 4.12-.073.305-1.658 1.035-5.156 1.035zm0-8.25c1.99 0 3.609-1.619 3.609-3.609S13.99 3.751 12 3.751 8.391 5.37 8.391 7.36A3.613 3.613 0 0 0 12 10.969zm0-6.188c1.422 0 2.578 1.156 2.578 2.578S13.422 9.937 12 9.937 9.422 8.781 9.422 7.359 10.578 4.781 12 4.781z"></path></svg></span></div>
-                        <div class="col pt-3 mid"><p class="header-typo cur">Our&nbsp;story</p></div>
-                        <div class="col pt-3 right"><p class="header-typo cur">Join&nbsp;us</p></div>
+                        <div class="col ps-0 d-none d-md-block"><span class="cur signup"><svg width="28px" height="28px" fill="#777777" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="UserIcon"><path d="M12 13.032c-3.758 0-6.188 2.023-6.188 5.155 0 1.964 5.154 2.063 6.188 2.063s6.188-.099 6.188-2.063c0-3.132-2.429-5.155-6.188-5.155zm0 6.187c-3.499 0-5.086-.73-5.156-1.031 0-3.04 2.663-4.124 5.156-4.124 2.492 0 5.156 1.084 5.156 4.12-.073.305-1.658 1.035-5.156 1.035zm0-8.25c1.99 0 3.609-1.619 3.609-3.609S13.99 3.751 12 3.751 8.391 5.37 8.391 7.36A3.613 3.613 0 0 0 12 10.969zm0-6.188c1.422 0 2.578 1.156 2.578 2.578S13.422 9.937 12 9.937 9.422 8.781 9.422 7.359 10.578 4.781 12 4.781z"></path></svg></span></div>
+                        <div class="col pt-3 mid"><p class="header-typo cur ourstory d-none d-md-block">Our&nbsp;story</p></div>
+                        <div class="col pt-3 right"><p class="header-typo cur joinus d-none d-md-block">Join&nbsp;us</p></div>
                     </div>
                 </div>
                 <div class="col-6 mid text-center pt-2"><span><svg width="135px" height="30.1" fill="#555" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 139 31" data-id="common"><path d="M57.98 28.94l-1.595-4.904h-.98L53.81 28.94l-1.593-4.91h-1.23l2.206 6.62h.98l1.716-4.66 1.59 4.66h.98l2.2-6.62h-1.22zM1.334 26.857h33.35v.98H1.334v-.98zm41.318-24.89h2.207v14.59h-2.21V1.967zm10.544 14.59h2.207v-6.13h7.602V8.343h-7.61V3.93h8.46V1.966h-10.66zM8.324 16.8c4.66 0 8.46-3.8 8.46-8.46 0-4.534-3.8-6.62-6.62-6.62-5.518 0-5.886 5.396-5.886 5.396h.13s.98-3.923 4.78-3.923c3.07 0 5.4 2.084 5.4 5.027 0 3.43-2.82 6.25-6.25 6.25-3.31 0-6.372-2.45-6.372-6.87 0-3.44 1.84-6.26 5.027-7.48V0C2.947.61.003 4.17.003 8.33c-.122 4.66 3.68 8.46 8.338 8.46zm36.78 10.056c-1.225-.245-1.593-.49-1.593-.98s.37-.737 1.11-.737c.62 0 1.23.24 1.72.61l.617-.85c-.613-.49-1.47-.86-2.33-.86-1.35 0-2.207.74-2.207 1.96s.73 1.6 2.2 1.96c1.22.25 1.47.49 1.47.98s-.49.86-1.1.86c-.86 0-1.47-.37-2.09-.86l-.74.86c.735.74 1.716 1.11 2.696 1.11 1.35 0 2.33-.73 2.33-1.96 0-1.35-.738-1.84-2.086-2.08zm-9.317-10.3l-4.414-5.884c2.207-.61 3.678-2.2 3.678-4.29 0-2.69-2.2-4.53-5.39-4.53h-6.38v14.59h2.2v-5.4h3.55l4.05 5.4 2.7.126zm-10.3-7.48V3.93h4.047c2.084 0 3.31.86 3.31 2.453s-1.35 2.575-3.31 2.575h-4.047zm40.706 18.76h3.31v-1.102h-3.31V25.14h3.678v-1.103h-4.78v6.498h4.78v-.98H66.2zM91.817 1.844l-6.62 14.713h2.33l1.715-3.8h7.11l1.595 3.8h2.452L93.78 1.844h-1.964zm-1.838 8.95l2.69-6.252 2.69 6.26h-5.4zm18.14-5.026l4.66 6.866.24.368.24-.36 4.536-6.86v10.79h2.207v-14.6h-2.084l-4.904 7.356-4.906-7.356h-2.08v14.59h2.085zm0 21.088h30.89v.98h-30.89v-.98zm22.19-12.383v-4.29h7.6V8.098h-7.6v-4.17h8.58v-1.96h-10.78v14.59h10.79V14.47zM98.93 28.57l-3.557-4.534H94.27v6.498h1.226v-4.536l3.55 4.536h.98v-6.498h-1.1zM72.936 1.968h-2.084v14.59h10.054v-2.084h-7.97zm13.12 25.87h3.31v-1.103h-3.31V25.14h3.677v-1.103H84.95v6.498h4.905v-.98h-3.81zm-9.197-3.8H74.4v6.497h2.453c2.083 0 3.432-1.47 3.432-3.31.122-1.717-1.35-3.188-3.434-3.188zm0 5.516h-1.35V25.14h1.35c1.35 0 2.2.98 2.2 2.206.12 1.226-.86 2.207-2.21 2.207z"></path></svg></span></div>
                 <div class="col-3 right">
                     <div class="row d-flex align-items-center justify-content-center">
-                        <div class="col-8 position-relative">
+                        <div class="col-8 position-relative d-none d-md-block">
                             <input type="text" placeholder="Search" class="form-control rounded-9 border-0">
                             <span class="position-absolute"><svg width="23px" height="23px" fill="#777" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="Presentation-top-area-search"><path d="m20.023 18.928-3.722-3.724a7.011 7.011 0 0 0 1.553-4.403c0-3.888-3.164-7.051-7.052-7.051s-7.051 3.163-7.051 7.051 3.163 7.051 7.051 7.051a7.014 7.014 0 0 0 4.404-1.553l3.723 3.723a.77.77 0 0 0 1.095 0 .773.773 0 0 0 0-1.095zM5.299 10.802c0-3.034 2.469-5.502 5.502-5.502s5.503 2.468 5.503 5.502-2.469 5.502-5.503 5.502a5.509 5.509 0 0 1-5.502-5.502z"></path></svg></span>
                         </div>
@@ -37,10 +38,8 @@
                 </div>
             </div>
         </div>
-        <div class="vip w-100 text-center position-absolute p-3 cur">
-            <p class="m-0 cur">Free delivery for our VIP Customers. Find out more!</p>
-            <span class="position-absolute"><svg width="27px" height="50px" fill="#fff" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="ClearIcon"><path d="m12.961 12 6.09-6.09a.678.678 0 1 0-.961-.961L12 11.039l-6.09-6.09a.678.678 0 1 0-.961.961l6.09 6.09-6.09 6.09a.678.678 0 0 0 .481 1.16.676.676 0 0 0 .481-.199l6.09-6.09 6.09 6.09c.133.133.306.199.481.199s.348-.066.481-.199a.678.678 0 0 0 0-.961L12.963 12z"></path></svg></span>
-        </div>
+        <!-- end header -->
+        <!-- initialize shopcanvas -->
         <div class="shopcanvas position-fixed">
             <div class="left position-fixed"></div>
             <div class="right position-fixed container-fluid p-3 d-flex flex-column justify-content-between">
@@ -60,9 +59,540 @@
                 </div>
             </div>
         </div>
-        
+        <!-- end shopcanvas -->
+        <!-- initialize signup -->
+        <div class="signup position-absolute">
+            <div class="right position-absolute"></div>
+            <div class="left position-absolute container-fluid p-0 pt-2 d-flex flex-column justify-content-start align-items-center">
+                <p>Sign in</p>
+                <form action="#" enctype="multipart/form-data" class="w-100 position-relative px-3">
+                    <label for="email" class="d-block email">Email&nbsp;address&nbsp;or&nbsp;registration&nbsp;number&nbsp;<sup>*</sup></label>
+                    <input type="email" id="email" class="mb-3 p-2 w-100 email">
+                    <label for="pass" class="d-block pass">Password&nbsp;<sup>*</sup></label>
+                    <input type="password" id="pass" class="p-2 w-100 pass">
+                    <span class="position-absolute"><svg width="26px" height="26px" fill="#333" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="VisibilityIcon"><path d="M20.393 14.518a.559.559 0 0 1-.559-.559c0-4.638-3.934-6.714-7.833-6.714s-7.833 2.076-7.833 6.714a.559.559 0 1 1-1.12 0c0-4.612 3.681-7.833 8.952-7.833s8.952 3.222 8.952 7.833c0 .309-.25.559-.559.559z"></path><path d="M12 17.875c-2.159 0-3.917-1.757-3.917-3.917S9.84 10.041 12 10.041s3.917 1.757 3.917 3.917S14.16 17.875 12 17.875zm0-6.714c-1.543 0-2.798 1.255-2.798 2.798s1.255 2.798 2.798 2.798 2.798-1.255 2.798-2.798-1.255-2.798-2.798-2.798z"></path></svg></span>
+                </form>
+                <button class="btn text-uppercase rounded-9 p-2 mt-3 ">sign&nbsp;in</button>
+                <a href="#" class="text-decoration-underline mt-2 px-3">Forgot&nbsp;password?</a>
+                <button class="btn text-uppercase rounded-9 p-3 mt-3 position-relative text-end"><span class="position-absolute"><svg width="40px" height="40px" fill="#1877F2" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="FacebookIcon"><path d="M20.227 12.05A8.227 8.227 0 0 0 12 3.823a8.227 8.227 0 0 0-1.285 16.354v-5.749H8.626V12.05h2.089v-1.813c0-2.062 1.228-3.201 3.108-3.201.9 0 1.842.161 1.842.161v2.024h-1.037c-1.022 0-1.341.634-1.341 1.285v1.543h2.282l-.365 2.378h-1.917v5.749a8.23 8.23 0 0 0 6.942-8.127z"></path></svg></span>Continue&nbsp;with&nbsp;Facebook</button>
+                <p class="mt-4 px-3">Register</p>
+                <div class="w-100 p-3 mb-2 text-center">VIP&nbsp;Customer</div>
+                <div class="w-100 p-3 mb-2 text-center">Brand&nbsp;Partner</div>
+                <a href="#" class="text-decoration-underline">I&nbsp;dont&nbsp;know&nbsp;yet</a>
+            </div>
+        </div>
+        <!-- end signup -->
+        <!-- initialize ourstory -->
+        <div class="ourstory position-fixed">
+            <div class="container-fluid position-fixed m-0 w-100">
+                <div class="row">
+                    <div class="col-4 pe-1">
+                        <div class="bg-image">
+                            <img src="images/our1.jpg" class="w-100" />
+                            <a href="#!">
+                              <div class="mask">
+                                <div class="d-flex justify-content-center align-items-center h-100">
+                                  <p class="text-white mb-0">Who&nbsp;we&nbsp;are</p>
+                                </div>
+                              </div>
+                              <div class="hover-overlay">
+                                <div class="mask" style="background-color: hsla(0, 0%, 0%, 0.4)"></div>
+                              </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-4 px-1"><div class="bg-image">
+                        <img src="images/our2.jpg" class="w-100" />
+                        <a href="#!">
+                          <div class="mask">
+                            <div class="d-flex justify-content-center align-items-center h-100">
+                              <p class="text-white mb-0">Product&nbsp;philosophy</p>
+                            </div>
+                          </div>
+                          <div class="hover-overlay">
+                            <div class="mask" style="background-color: hsla(0, 0%, 0%, 0.4)"></div>
+                          </div>
+                        </a>
+                    </div></div>
+                    <div class="col-4 ps-1"><div class="bg-image">
+                        <img src="images/our3.jpg" class="w-100" />
+                        <a href="#!">
+                          <div class="mask">
+                            <div class="d-flex justify-content-center align-items-center h-100">
+                              <p class="text-white mb-0">Sustainability</p>
+                            </div>
+                          </div>
+                          <div class="hover-overlay">
+                            <div class="mask" style="background-color: hsla(0, 0%, 0%, 0.4)"></div>
+                          </div>
+                        </a>
+                    </div></div>
+                </div>
+            </div>
+            <div class="down position-fixed w-100"></div>
+
+        </div>
+        <!-- end ourstory -->
+        <!-- initialize joinus -->
+        <div class="joinus position-fixed">
+            <div class="container-fluid position-fixed m-0 w-100">
+                <div class="row">
+                    <div class="col-6 pe-1">
+                        <div class="bg-image">
+                            <img src="images/join1.jpg" class="w-100" />
+                            <a href="#!">
+                              <div class="mask">
+                                <div class="d-flex justify-content-center align-items-end h-100">
+                                  <div class="button"><p class="text-white mb-0">VIP&nbsp;Customer</p></div>
+                                </div>
+                              </div>
+                              <div class="hover-overlay">
+                                <div class="mask" style="background-color: hsla(0, 0%, 0%, 0.4)"></div>
+                              </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-6 px-1"><div class="bg-image">
+                        <img src="images/join2.jpg" class="w-100" />
+                        <a href="#!">
+                          <div class="mask">
+                            <div class="d-flex justify-content-center align-items-end h-100">
+                              <div class="button"><p class="text-white mb-0">Brand&nbsp;partner</p></div>
+                            </div>
+                          </div>
+                          <div class="hover-overlay">
+                            <div class="mask" style="background-color: hsla(0, 0%, 0%, 0.4)"></div>
+                          </div>
+                        </a>
+                    </div></div>
+                    
+                </div>
+                <div class="row"><div class="col-12 text-center mt-2"><a>I&nbsp;dont&nbsp;know&nbsp;yet</a>
+                </div></div>
+            </div>
+            <div class="down position-fixed w-100"></div>
+
+        </div>
+        <!-- end joinus -->
+        <!-- initialize navmenu -->
+        <div class="menu w-100 position-fixed">
+            <nav>
+                <ul class="d-flex flex-column list-unstyled p-0">
+                    <li class="cur white mt-2">
+                        <a href="#">Best&nbsp;Offers</a>
+                    </li>
+                    <li class="cur white">
+                        <a href="#">eCatalogue</a>
+                        <div class=" hover position-absolute">
+                            <div class="d-flex flex-column align-items-center justify-content-center p-4">
+                                <p class="p-cata cur">Catalogue 04</p>
+                            <p class="p-date">22.2.2023 - 15.3.2023</p>
+                            <div class="bg-image hover-overlay w-25">
+                                <img src="images/cata.jpg" class="w-100 rounded-5" alt="Louvre" />
+                                <a href="#!">
+                                    <div class="mask w-100 rounded-5" style="background-color: hsla(0, 0%, 0%, 0.381)"></div>
+                                </a>
+                            </div>
+                            <p class="text-decoration-underline text-uppercase p-reg p-2 cur">see all</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="cur white">
+                        <a href="#">Inspiration</a>
+                        <div class=" hover position-absolute">
+                            <div class="bg-image w-25 h-50 position-absolute middle">
+                                <img src="images/inspiration.jpg" class="w-100" />
+                                <a href="#!">
+                                  <div class="mask">
+                                    <div class="d-flex justify-content-center align-items-center h-100">
+                                      <p class="text-white mb-0 p-big z">Editorials</p>
+                                    </div>
+                                  </div>
+                                  <div class="hover-overlay">
+                                    <div class="mask" style="background-color: hsla(0, 0%, 0%, 0.4)"></div>
+                                  </div>
+                                </a>
+                            </div> 
+                        </div>
+                    </li>
+                    <li class="cur skin">
+                        <a href="#">Skin&nbsp;care</a>
+                        <div class=" hover position-absolute">
+                            <div class="d-flex justify-content-start align-items-start w-100 h-100 pt-4 ps-5 gap">
+                                <div class="d-flex flex-column align-items-start justify-content-start h-100">
+                                    <a href="#" class="p-whats"><span class="pe-2"><svg width="28px" height="28px" fill="#333" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="ProductsIcon"><path d="M19.245 4.225a1.435 1.435 0 0 0-1.078-.475h-5.156c-.419 0-.812.173-1.078.475-.267.302-.39.713-.337 1.128l1.415 11.32v2.03c0 .853.694 1.547 1.547 1.547h2.063c.853 0 1.547-.694 1.547-1.547v-2.03l1.415-11.32a1.437 1.437 0 0 0-.337-1.128zm-2.624 14.994h-2.062a.517.517 0 0 1-.516-.516v-1.547h3.094v1.547a.517.517 0 0 1-.516.516zm.576-3.094h-3.215L12.619 5.224a.386.386 0 0 1 .088-.316.39.39 0 0 1 .304-.127h5.156a.39.39 0 0 1 .304.127.395.395 0 0 1 .088.316l-1.363 10.901zM7.35 3.75c-1.867 0-2.565.736-2.639.82a1.35 1.35 0 0 0-.181 1.42l1.262 2.523v10.191c0 .853.694 1.547 1.547 1.547s1.547-.694 1.547-1.547V8.513l1.262-2.523a1.36 1.36 0 0 0-.173-1.418c-.072-.085-.754-.822-2.624-.822zm-.011 15.469a.517.517 0 0 1-.516-.516V8.906h1.031v9.797a.517.517 0 0 1-.516.516zm1.887-13.69L8.052 7.875H6.627L5.454 5.529c-.033-.066-.014-.224.025-.268.005-.005.489-.479 1.872-.479 1.365 0 1.839.459 1.84.459.049.058.069.22.035.288z"></path></svg></span>What's&nbsp;new</a>
+                                    <a href="#" class="p-reg mb-2 mt-5">Moisturisers</a>
+                                    <a href="#" class="p-light mb-2">Day&nbsp;cream</a>
+                                    <a href="#" class="p-light mb-2">Night&nbsp;cream</a>
+                                    <a href="#" class="p-light mb-2">BB&nbsp;&&nbsp;CC&nbsp;cream</a>
+                                    <a href="#" class="p-reg mb-2 mt-5">Serum&nbsp;&&nbsp;Treatment</a>
+                                    <a href="#" class="p-light mb-2">Serum&nbsp;&&nbsp;Booster</a>
+                                    <a href="#" class="p-light mb-2">Exfoliator</a>
+                                    <a href="#" class="p-light mb-2">Acne&nbsp;&&nbsp;Blemish</a>
+                                    <a href="#" class="p-light mb-2">Neck&nbsp;&&nbsp;Decolletage</a>
+                                </div>
+                                <div class="d-flex flex-column align-items-start justify-content-start h-100 ms-5">
+                                    <a href="#" class="p-reg mb-2">Eye&nbsp;&&nbsp;Lip&nbsp;care</a>
+                                    <a href="#" class="p-light mb-2">Eye&nbsp;creams</a>
+                                    <a href="#" class="p-light mb-2">Lip&nbsp;care</a>
+                                    <a href="#" class="p-reg mb-2 mt-5">Cleansers</a>
+                                    <a href="#" class="p-light mb-2">Cleanser</a>
+                                    <a href="#" class="p-light mb-2">Make-Up&nbsp;remover</a>
+                                    <a href="#" class="p-reg mb-2 mt-5">Mask</a>
+                                    <a href="#" class="p-light mb-2">Sheet&nbsp;masks</a>
+                                    <a href="#" class="p-light mb-2">Other&nbsp;masks</a>
+
+                                </div>
+                                <div class="d-flex flex-column align-items-start justify-content-start h-100">
+                                    <a href="#" class="p-reg mb-2">Sun&nbsp;care</a>
+                                    <a href="#" class="p-light mb-2">Face&nbsp;sun&nbsp;cream</a>
+                                    <a href="#" class="p-light mb-2">Sunscreen</a>
+                                    <a href="#" class="p-light mb-2">After&nbsp;sun&nbsp;&&nbsp;Self-tanning</a>
+                                    <a href="#" class="p-reg mb-2 mt-5">Skin&nbsp;care&nbsp;tools</a>
+                                    <a href="#" class="p-reg mb-2 mt-5">Skin&nbsp;care&nbsp;sets</a>
+                                    <a href="#" class="p-reg mb-2 mt-5">Tonner&nbsp;essences&nbsp;&&nbsp;Mist</a>
+                                </div>
+                                <div class="d-flex flex-column align-items-start justify-content-start h-100">
+                                    <a href="#" class="p-reg mb-2">Brands</a>
+                                    <a href="#" class="p-light mb-2">NovAge</a>
+                                    <a href="#" class="p-light mb-2">Waunt</a>
+                                    <a href="#" class="p-light mb-2">Love&nbsp;Nature</a>
+                                    <a href="#" class="p-light mb-2">Optimals</a>
+                                    <a href="#" class="p-light mb-2">Royal&nbsp;Velvet</a>
+                                    <a href="#" class="p-light mb-2">Sun&nbsp;360</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="cur make">
+                        <a href="#">Make-Up</a>
+                        <div class=" hover position-absolute">
+                            <div class="d-flex justify-content-start align-items-start w-100 h-100 pt-4 ps-5 gap">
+                                <div class="d-flex flex-column align-items-start justify-content-start h-100">
+                                    <a href="#" class="p-whats"><span class="pe-2"><svg width="28px" height="28px" fill="#333" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="ProductsIcon"><path d="M19.245 4.225a1.435 1.435 0 0 0-1.078-.475h-5.156c-.419 0-.812.173-1.078.475-.267.302-.39.713-.337 1.128l1.415 11.32v2.03c0 .853.694 1.547 1.547 1.547h2.063c.853 0 1.547-.694 1.547-1.547v-2.03l1.415-11.32a1.437 1.437 0 0 0-.337-1.128zm-2.624 14.994h-2.062a.517.517 0 0 1-.516-.516v-1.547h3.094v1.547a.517.517 0 0 1-.516.516zm.576-3.094h-3.215L12.619 5.224a.386.386 0 0 1 .088-.316.39.39 0 0 1 .304-.127h5.156a.39.39 0 0 1 .304.127.395.395 0 0 1 .088.316l-1.363 10.901zM7.35 3.75c-1.867 0-2.565.736-2.639.82a1.35 1.35 0 0 0-.181 1.42l1.262 2.523v10.191c0 .853.694 1.547 1.547 1.547s1.547-.694 1.547-1.547V8.513l1.262-2.523a1.36 1.36 0 0 0-.173-1.418c-.072-.085-.754-.822-2.624-.822zm-.011 15.469a.517.517 0 0 1-.516-.516V8.906h1.031v9.797a.517.517 0 0 1-.516.516zm1.887-13.69L8.052 7.875H6.627L5.454 5.529c-.033-.066-.014-.224.025-.268.005-.005.489-.479 1.872-.479 1.365 0 1.839.459 1.84.459.049.058.069.22.035.288z"></path></svg></span>What's&nbsp;new</a>
+                                    <a href="#" class="p-reg mb-2 mt-5">Women</a>
+                                    <a href="#" class="p-light mb-2">Fragrance</a>
+                                    <a href="#" class="p-light mb-2">Body&nbsp;care</a>
+                                    <a href="#" class="p-light mb-2">Body&nbsp;spray&nbsp;&&nbsp;Deodorant</a>
+                                    <a href="#" class="p-light mb-2">Gift&nbsp;set&nbsp;&&nbsp;Purse&nbsp;spray</a>
+                                    <a href="#" class="p-reg mb-2 mt-5">Men</a>
+                                    <a href="#" class="p-light mb-2">Fragrance</a>
+                                    <a href="#" class="p-light mb-2">Body&nbsp;spray&nbsp;&&nbsp;Deodorant</a>
+                                </div>    
+                                <div class="d-flex flex-column align-items-start justify-content-start h-100 ms-5">
+                                    <a href="#" class="p-reg mb-2">Brands</a>
+                                    <a href="#" class="p-light mb-2">Eclat</a>
+                                    <a href="#" class="p-light mb-2">Giordani&nbsp;Gold</a>
+                                    <a href="#" class="p-light mb-2">Giordani&nbsp;Man</a>
+    
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="cur frag">
+                        <a href="#">Fragrance</a>
+                        <div class=" hover position-absolute">
+                            <div class="d-flex justify-content-start align-items-start w-100 h-100 pt-4 ps-5 gap">
+                                <div class="d-flex flex-column align-items-start justify-content-start h-100">
+                                    <a href="#" class="p-reg mb-2">Kids</a>
+                                    <a href="#" class="p-light mb-2">Hair&nbsp;&&nbsp;Body&nbsp;wash</a>
+                                    <a href="#" class="p-light mb-2">Body&nbsp;care</a>
+                                    <a href="#" class="p-light mb-2">Oral&nbsp;care</a>
+                                    <a href="#" class="p-light mb-2">fragrance</a>
+                                    <a href="#" class="p-reg mb-2 mt-5">Baby</a>
+                                    <a href="#" class="p-light mb-2">Hair&nbsp;&&nbsp;Body&nbsp;wash</a>
+                                    <a href="#" class="p-light mb-2">Baby&nbsp;care</a>
+                                </div>    
+                                <div class="d-flex flex-column align-items-start justify-content-start h-100 ms-5">
+                                    <a href="#" class="p-reg mb-2">Brands</a>
+                                    <a href="#" class="p-light mb-2">Baby&nbsp;O</a>
+                                    <a href="#" class="p-light mb-2">Love&nbsp;Nature</a>
+                                    <a href="#" class="p-light mb-2">Optifresh</a>
+    
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="cur bath">
+                        <a href="#">Bath&nbsp;&&nbsp;Body</a>
+                        <div class=" hover position-absolute">
+                            <div class="d-flex justify-content-start align-items-start w-100 h-100 pt-4 ps-5 gap">
+                                <div class="d-flex flex-column align-items-start justify-content-start h-100">
+                                    <a href="#" class="p-whats"><span class="pe-2"><svg width="28px" height="28px" fill="#333" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="ProductsIcon"><path d="M19.245 4.225a1.435 1.435 0 0 0-1.078-.475h-5.156c-.419 0-.812.173-1.078.475-.267.302-.39.713-.337 1.128l1.415 11.32v2.03c0 .853.694 1.547 1.547 1.547h2.063c.853 0 1.547-.694 1.547-1.547v-2.03l1.415-11.32a1.437 1.437 0 0 0-.337-1.128zm-2.624 14.994h-2.062a.517.517 0 0 1-.516-.516v-1.547h3.094v1.547a.517.517 0 0 1-.516.516zm.576-3.094h-3.215L12.619 5.224a.386.386 0 0 1 .088-.316.39.39 0 0 1 .304-.127h5.156a.39.39 0 0 1 .304.127.395.395 0 0 1 .088.316l-1.363 10.901zM7.35 3.75c-1.867 0-2.565.736-2.639.82a1.35 1.35 0 0 0-.181 1.42l1.262 2.523v10.191c0 .853.694 1.547 1.547 1.547s1.547-.694 1.547-1.547V8.513l1.262-2.523a1.36 1.36 0 0 0-.173-1.418c-.072-.085-.754-.822-2.624-.822zm-.011 15.469a.517.517 0 0 1-.516-.516V8.906h1.031v9.797a.517.517 0 0 1-.516.516zm1.887-13.69L8.052 7.875H6.627L5.454 5.529c-.033-.066-.014-.224.025-.268.005-.005.489-.479 1.872-.479 1.365 0 1.839.459 1.84.459.049.058.069.22.035.288z"></path></svg></span>What's&nbsp;new</a>
+                                    <a href="#" class="p-reg mb-2 mt-5">Moisturisers</a>
+                                    <a href="#" class="p-light mb-2">Day&nbsp;cream</a>
+                                    <a href="#" class="p-light mb-2">Night&nbsp;cream</a>
+                                    <a href="#" class="p-light mb-2">BB&nbsp;&&nbsp;CC&nbsp;cream</a>
+                                    <a href="#" class="p-reg mb-2 mt-5">Serum&nbsp;&&nbsp;Treatment</a>
+                                    <a href="#" class="p-light mb-2">Serum&nbsp;&&nbsp;Booster</a>
+                                    <a href="#" class="p-light mb-2">Exfoliator</a>
+                                    <a href="#" class="p-light mb-2">Acne&nbsp;&&nbsp;Blemish</a>
+                                    <a href="#" class="p-light mb-2">Neck&nbsp;&&nbsp;Decolletage</a>
+                                </div>
+                                <div class="d-flex flex-column align-items-start justify-content-start h-100 ms-5">
+                                    <a href="#" class="p-reg mb-2">Eye&nbsp;&&nbsp;Lip&nbsp;care</a>
+                                    <a href="#" class="p-light mb-2">Eye&nbsp;creams</a>
+                                    <a href="#" class="p-light mb-2">Lip&nbsp;care</a>
+                                    <a href="#" class="p-reg mb-2 mt-5">Cleansers</a>
+                                    <a href="#" class="p-light mb-2">Cleanser</a>
+                                    <a href="#" class="p-light mb-2">Make-Up&nbsp;remover</a>
+                                    <a href="#" class="p-reg mb-2 mt-5">Mask</a>
+                                    <a href="#" class="p-light mb-2">Sheet&nbsp;masks</a>
+                                    <a href="#" class="p-light mb-2">Other&nbsp;masks</a>
+
+                                </div>
+                                <div class="d-flex flex-column align-items-start justify-content-start h-100">
+                                    <a href="#" class="p-reg mb-2">Sun&nbsp;care</a>
+                                    <a href="#" class="p-light mb-2">Face&nbsp;sun&nbsp;cream</a>
+                                    <a href="#" class="p-light mb-2">Sunscreen</a>
+                                    <a href="#" class="p-light mb-2">After&nbsp;sun&nbsp;&&nbsp;Self-tanning</a>
+                                    <a href="#" class="p-reg mb-2 mt-5">Skin&nbsp;care&nbsp;tools</a>
+                                    <a href="#" class="p-reg mb-2 mt-5">Skin&nbsp;care&nbsp;sets</a>
+                                    <a href="#" class="p-reg mb-2 mt-5">Tonner&nbsp;essences&nbsp;&&nbsp;Mist</a>
+                                </div>
+                                <div class="d-flex flex-column align-items-start justify-content-start h-100">
+                                    <a href="#" class="p-reg mb-2">Brands</a>
+                                    <a href="#" class="p-light mb-2">NovAge</a>
+                                    <a href="#" class="p-light mb-2">Waunt</a>
+                                    <a href="#" class="p-light mb-2">Love&nbsp;Nature</a>
+                                    <a href="#" class="p-light mb-2">Optimals</a>
+                                    <a href="#" class="p-light mb-2">Royal&nbsp;Velvet</a>
+                                    <a href="#" class="p-light mb-2">Sun&nbsp;360</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="cur hair">
+                        <a href="#">Hair</a>
+                        <div class=" hover position-absolute">
+                            <div class="d-flex justify-content-start align-items-start w-100 h-100 pt-4 ps-5 gap">
+                                <div class="d-flex flex-column align-items-start justify-content-start h-100">
+                                    <a href="#" class="p-whats"><span class="pe-2"><svg width="28px" height="28px" fill="#333" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="ProductsIcon"><path d="M19.245 4.225a1.435 1.435 0 0 0-1.078-.475h-5.156c-.419 0-.812.173-1.078.475-.267.302-.39.713-.337 1.128l1.415 11.32v2.03c0 .853.694 1.547 1.547 1.547h2.063c.853 0 1.547-.694 1.547-1.547v-2.03l1.415-11.32a1.437 1.437 0 0 0-.337-1.128zm-2.624 14.994h-2.062a.517.517 0 0 1-.516-.516v-1.547h3.094v1.547a.517.517 0 0 1-.516.516zm.576-3.094h-3.215L12.619 5.224a.386.386 0 0 1 .088-.316.39.39 0 0 1 .304-.127h5.156a.39.39 0 0 1 .304.127.395.395 0 0 1 .088.316l-1.363 10.901zM7.35 3.75c-1.867 0-2.565.736-2.639.82a1.35 1.35 0 0 0-.181 1.42l1.262 2.523v10.191c0 .853.694 1.547 1.547 1.547s1.547-.694 1.547-1.547V8.513l1.262-2.523a1.36 1.36 0 0 0-.173-1.418c-.072-.085-.754-.822-2.624-.822zm-.011 15.469a.517.517 0 0 1-.516-.516V8.906h1.031v9.797a.517.517 0 0 1-.516.516zm1.887-13.69L8.052 7.875H6.627L5.454 5.529c-.033-.066-.014-.224.025-.268.005-.005.489-.479 1.872-.479 1.365 0 1.839.459 1.84.459.049.058.069.22.035.288z"></path></svg></span>What's&nbsp;new</a>
+                                    <a href="#" class="p-reg mb-2 mt-5">Women</a>
+                                    <a href="#" class="p-light mb-2">Fragrance</a>
+                                    <a href="#" class="p-light mb-2">Body&nbsp;care</a>
+                                    <a href="#" class="p-light mb-2">Body&nbsp;spray&nbsp;&&nbsp;Deodorant</a>
+                                    <a href="#" class="p-light mb-2">Gift&nbsp;set&nbsp;&&nbsp;Purse&nbsp;spray</a>
+                                    <a href="#" class="p-reg mb-2 mt-5">Men</a>
+                                    <a href="#" class="p-light mb-2">Fragrance</a>
+                                    <a href="#" class="p-light mb-2">Body&nbsp;spray&nbsp;&&nbsp;Deodorant</a>
+                                </div>    
+                                <div class="d-flex flex-column align-items-start justify-content-start h-100 ms-5">
+                                    <a href="#" class="p-reg mb-2">Brands</a>
+                                    <a href="#" class="p-light mb-2">Eclat</a>
+                                    <a href="#" class="p-light mb-2">Giordani&nbsp;Gold</a>
+                                    <a href="#" class="p-light mb-2">Giordani&nbsp;Man</a>
+    
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="cur acce">
+                        <a href="#">Accessories</a>
+                        <div class=" hover position-absolute">
+                            <div class="d-flex justify-content-start align-items-start w-100 h-100 pt-4 ps-5 gap">
+                                <div class="d-flex flex-column align-items-start justify-content-start h-100">
+                                    <a href="#" class="p-reg mb-2">Kids</a>
+                                    <a href="#" class="p-light mb-2">Hair&nbsp;&&nbsp;Body&nbsp;wash</a>
+                                    <a href="#" class="p-light mb-2">Body&nbsp;care</a>
+                                    <a href="#" class="p-light mb-2">Oral&nbsp;care</a>
+                                    <a href="#" class="p-light mb-2">fragrance</a>
+                                    <a href="#" class="p-reg mb-2 mt-5">Baby</a>
+                                    <a href="#" class="p-light mb-2">Hair&nbsp;&&nbsp;Body&nbsp;wash</a>
+                                    <a href="#" class="p-light mb-2">Baby&nbsp;care</a>
+                                </div>    
+                                <div class="d-flex flex-column align-items-start justify-content-start h-100 ms-5">
+                                    <a href="#" class="p-reg mb-2">Brands</a>
+                                    <a href="#" class="p-light mb-2">Baby&nbsp;O</a>
+                                    <a href="#" class="p-light mb-2">Love&nbsp;Nature</a>
+                                    <a href="#" class="p-light mb-2">Optifresh</a>
+    
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="cur well">
+                        <a href="#">Wellness</a>
+                        <div class=" hover position-absolute">
+                            <div class="d-flex justify-content-start align-items-start w-100 h-100 pt-4 ps-5 gap">
+                                <div class="d-flex flex-column align-items-start justify-content-start h-100">
+                                    <a href="#" class="p-whats"><span class="pe-2"><svg width="28px" height="28px" fill="#333" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="ProductsIcon"><path d="M19.245 4.225a1.435 1.435 0 0 0-1.078-.475h-5.156c-.419 0-.812.173-1.078.475-.267.302-.39.713-.337 1.128l1.415 11.32v2.03c0 .853.694 1.547 1.547 1.547h2.063c.853 0 1.547-.694 1.547-1.547v-2.03l1.415-11.32a1.437 1.437 0 0 0-.337-1.128zm-2.624 14.994h-2.062a.517.517 0 0 1-.516-.516v-1.547h3.094v1.547a.517.517 0 0 1-.516.516zm.576-3.094h-3.215L12.619 5.224a.386.386 0 0 1 .088-.316.39.39 0 0 1 .304-.127h5.156a.39.39 0 0 1 .304.127.395.395 0 0 1 .088.316l-1.363 10.901zM7.35 3.75c-1.867 0-2.565.736-2.639.82a1.35 1.35 0 0 0-.181 1.42l1.262 2.523v10.191c0 .853.694 1.547 1.547 1.547s1.547-.694 1.547-1.547V8.513l1.262-2.523a1.36 1.36 0 0 0-.173-1.418c-.072-.085-.754-.822-2.624-.822zm-.011 15.469a.517.517 0 0 1-.516-.516V8.906h1.031v9.797a.517.517 0 0 1-.516.516zm1.887-13.69L8.052 7.875H6.627L5.454 5.529c-.033-.066-.014-.224.025-.268.005-.005.489-.479 1.872-.479 1.365 0 1.839.459 1.84.459.049.058.069.22.035.288z"></path></svg></span>What's&nbsp;new</a>
+                                    <a href="#" class="p-reg mb-2 mt-5">Moisturisers</a>
+                                    <a href="#" class="p-light mb-2">Day&nbsp;cream</a>
+                                    <a href="#" class="p-light mb-2">Night&nbsp;cream</a>
+                                    <a href="#" class="p-light mb-2">BB&nbsp;&&nbsp;CC&nbsp;cream</a>
+                                    <a href="#" class="p-reg mb-2 mt-5">Serum&nbsp;&&nbsp;Treatment</a>
+                                    <a href="#" class="p-light mb-2">Serum&nbsp;&&nbsp;Booster</a>
+                                    <a href="#" class="p-light mb-2">Exfoliator</a>
+                                    <a href="#" class="p-light mb-2">Acne&nbsp;&&nbsp;Blemish</a>
+                                    <a href="#" class="p-light mb-2">Neck&nbsp;&&nbsp;Decolletage</a>
+                                </div>
+                                <div class="d-flex flex-column align-items-start justify-content-start h-100 ms-5">
+                                    <a href="#" class="p-reg mb-2">Eye&nbsp;&&nbsp;Lip&nbsp;care</a>
+                                    <a href="#" class="p-light mb-2">Eye&nbsp;creams</a>
+                                    <a href="#" class="p-light mb-2">Lip&nbsp;care</a>
+                                    <a href="#" class="p-reg mb-2 mt-5">Cleansers</a>
+                                    <a href="#" class="p-light mb-2">Cleanser</a>
+                                    <a href="#" class="p-light mb-2">Make-Up&nbsp;remover</a>
+                                    <a href="#" class="p-reg mb-2 mt-5">Mask</a>
+                                    <a href="#" class="p-light mb-2">Sheet&nbsp;masks</a>
+                                    <a href="#" class="p-light mb-2">Other&nbsp;masks</a>
+
+                                </div>
+                                <div class="d-flex flex-column align-items-start justify-content-start h-100">
+                                    <a href="#" class="p-reg mb-2">Sun&nbsp;care</a>
+                                    <a href="#" class="p-light mb-2">Face&nbsp;sun&nbsp;cream</a>
+                                    <a href="#" class="p-light mb-2">Sunscreen</a>
+                                    <a href="#" class="p-light mb-2">After&nbsp;sun&nbsp;&&nbsp;Self-tanning</a>
+                                    <a href="#" class="p-reg mb-2 mt-5">Skin&nbsp;care&nbsp;tools</a>
+                                    <a href="#" class="p-reg mb-2 mt-5">Skin&nbsp;care&nbsp;sets</a>
+                                    <a href="#" class="p-reg mb-2 mt-5">Tonner&nbsp;essences&nbsp;&&nbsp;Mist</a>
+                                </div>
+                                <div class="d-flex flex-column align-items-start justify-content-start h-100">
+                                    <a href="#" class="p-reg mb-2">Brands</a>
+                                    <a href="#" class="p-light mb-2">NovAge</a>
+                                    <a href="#" class="p-light mb-2">Waunt</a>
+                                    <a href="#" class="p-light mb-2">Love&nbsp;Nature</a>
+                                    <a href="#" class="p-light mb-2">Optimals</a>
+                                    <a href="#" class="p-light mb-2">Royal&nbsp;Velvet</a>
+                                    <a href="#" class="p-light mb-2">Sun&nbsp;360</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="cur men">
+                        <a href="#">Men</a>
+                        <div class=" hover position-absolute">
+                            <div class="d-flex justify-content-start align-items-start w-100 h-100 pt-4 ps-5 gap">
+                                <div class="d-flex flex-column align-items-start justify-content-start h-100">
+                                    <a href="#" class="p-whats"><span class="pe-2"><svg width="28px" height="28px" fill="#333" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="ProductsIcon"><path d="M19.245 4.225a1.435 1.435 0 0 0-1.078-.475h-5.156c-.419 0-.812.173-1.078.475-.267.302-.39.713-.337 1.128l1.415 11.32v2.03c0 .853.694 1.547 1.547 1.547h2.063c.853 0 1.547-.694 1.547-1.547v-2.03l1.415-11.32a1.437 1.437 0 0 0-.337-1.128zm-2.624 14.994h-2.062a.517.517 0 0 1-.516-.516v-1.547h3.094v1.547a.517.517 0 0 1-.516.516zm.576-3.094h-3.215L12.619 5.224a.386.386 0 0 1 .088-.316.39.39 0 0 1 .304-.127h5.156a.39.39 0 0 1 .304.127.395.395 0 0 1 .088.316l-1.363 10.901zM7.35 3.75c-1.867 0-2.565.736-2.639.82a1.35 1.35 0 0 0-.181 1.42l1.262 2.523v10.191c0 .853.694 1.547 1.547 1.547s1.547-.694 1.547-1.547V8.513l1.262-2.523a1.36 1.36 0 0 0-.173-1.418c-.072-.085-.754-.822-2.624-.822zm-.011 15.469a.517.517 0 0 1-.516-.516V8.906h1.031v9.797a.517.517 0 0 1-.516.516zm1.887-13.69L8.052 7.875H6.627L5.454 5.529c-.033-.066-.014-.224.025-.268.005-.005.489-.479 1.872-.479 1.365 0 1.839.459 1.84.459.049.058.069.22.035.288z"></path></svg></span>What's&nbsp;new</a>
+                                    <a href="#" class="p-reg mb-2 mt-5">Women</a>
+                                    <a href="#" class="p-light mb-2">Fragrance</a>
+                                    <a href="#" class="p-light mb-2">Body&nbsp;care</a>
+                                    <a href="#" class="p-light mb-2">Body&nbsp;spray&nbsp;&&nbsp;Deodorant</a>
+                                    <a href="#" class="p-light mb-2">Gift&nbsp;set&nbsp;&&nbsp;Purse&nbsp;spray</a>
+                                    <a href="#" class="p-reg mb-2 mt-5">Men</a>
+                                    <a href="#" class="p-light mb-2">Fragrance</a>
+                                    <a href="#" class="p-light mb-2">Body&nbsp;spray&nbsp;&&nbsp;Deodorant</a>
+                                </div>    
+                                <div class="d-flex flex-column align-items-start justify-content-start h-100 ms-5">
+                                    <a href="#" class="p-reg mb-2">Brands</a>
+                                    <a href="#" class="p-light mb-2">Eclat</a>
+                                    <a href="#" class="p-light mb-2">Giordani&nbsp;Gold</a>
+                                    <a href="#" class="p-light mb-2">Giordani&nbsp;Man</a>
+    
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="cur kids">
+                        <a href="#">Kids&nbsp;&&nbsp;Baby</a>
+                        <div class=" hover position-absolute">
+                            <div class="d-flex justify-content-start align-items-start w-100 h-100 pt-4 ps-5 gap">
+                                <div class="d-flex flex-column align-items-start justify-content-start h-100">
+                                    <a href="#" class="p-reg mb-2">Kids</a>
+                                    <a href="#" class="p-light mb-2">Hair&nbsp;&&nbsp;Body&nbsp;wash</a>
+                                    <a href="#" class="p-light mb-2">Body&nbsp;care</a>
+                                    <a href="#" class="p-light mb-2">Oral&nbsp;care</a>
+                                    <a href="#" class="p-light mb-2">fragrance</a>
+                                    <a href="#" class="p-reg mb-2 mt-5">Baby</a>
+                                    <a href="#" class="p-light mb-2">Hair&nbsp;&&nbsp;Body&nbsp;wash</a>
+                                    <a href="#" class="p-light mb-2">Baby&nbsp;care</a>
+                                </div>    
+                                <div class="d-flex flex-column align-items-start justify-content-start h-100 ms-5">
+                                    <a href="#" class="p-reg mb-2">Brands</a>
+                                    <a href="#" class="p-light mb-2">Baby&nbsp;O</a>
+                                    <a href="#" class="p-light mb-2">Love&nbsp;Nature</a>
+                                    <a href="#" class="p-light mb-2">Optifresh</a>
+    
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="cur nove">
+                        <a href="#">Novelties</a>
+                    </li>
+                    <li class="cur nove">
+                        <a href="#">Beauty&nbsp;Rewards<br>Programme</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <!-- end navmenu -->
     </header>
     <main>
+        <!-- initialize vip -->
+        <div class="vip w-100 text-center position-absolute p-3 cur">
+            <p class="m-0 cur">Free delivery for our VIP Customers. Find out more!</p>
+            <span class="position-absolute"><svg width="27px" height="50px" fill="#fff" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="ClearIcon"><path d="m12.961 12 6.09-6.09a.678.678 0 1 0-.961-.961L12 11.039l-6.09-6.09a.678.678 0 1 0-.961.961l6.09 6.09-6.09 6.09a.678.678 0 0 0 .481 1.16.676.676 0 0 0 .481-.199l6.09-6.09 6.09 6.09c.133.133.306.199.481.199s.348-.066.481-.199a.678.678 0 0 0 0-.961L12.963 12z"></path></svg></span>
+        </div>
+        <!-- end vip -->
+        <!-- initialize carosel -->
+        <div class="carosel w-100 cur position-relative">
+            <div id="carouselExampleTouch" class="carousel slide" data-mdb-touch="false">
+                <div class="carousel-indicators">
+                  <button
+                    type="button"
+                    data-mdb-target="#carouselExampleTouch"
+                    data-mdb-slide-to="0"
+                    class="active bg-dark"
+                  ></button>
+                  <button
+                    class="bg-dark"
+                    type="button"
+                    data-mdb-target="#carouselExampleTouch"
+                    data-mdb-slide-to="1"
+                  ></button>
+                  <button
+                    type="button"
+                    data-mdb-target="#carouselExampleTouch"
+                    data-mdb-slide-to="2"
+                    class="bg-dark"
+                  ></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="images/caro1.jpg" class="d-block w-100" alt="Wild Landscape"/>
+                    <div class="carousel-caption ms-md-5 ps-md-5">
+                        <div class="row ms-md-5 ps-md-5 w-100 d-flex justify-content-md-end">
+                            <div class="col-md-6 ps-md-5 ms-md-5 pb-md-5 mb-md-3 text-center">
+                                <p class="text-uppercase">new&nbsp;the&nbsp;one&nbsp;wonder&nbsp;lash&nbsp;maskara</p>
+                                <p class="text-uppercase">perfect&nbsp;look&nbsp;begins<br>with&nbsp;care</p>
+                                <button class="text-uppercase rounded-9 py-2 px-5">get&nbsp;it!</button>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/caro2.jpg" class="d-block w-100" alt="Camera"/>
+                    <div class="carousel-caption ms-md-5 ps-md-5">
+                        <div class="row ms-md-5 ps-md-5 w-100 d-flex justify-content-md-end">
+                            <div class="col-md-6 ps-md-5 ms-md-5 pb-md-5 mb-md-3 text-center">
+                                <p class="text-uppercase">oriflame&nbsp;awards</p>
+                                <p class="text-uppercase">presenting&nbsp;the<br>nominees&nbsp;for&nbsp;best<br>products</p>
+                                <button class="text-uppercase rounded-9 py-2 px-5">see&nbsp;them&nbsp;now</button>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/caro3.jpg" class="d-block w-100" alt="Exotic Fruits"/>
+                    <div class="carousel-caption ms-md-5 ps-md-5">
+                        <div class="row ms-md-5 ps-md-5 w-100 d-flex justify-content-md-end">
+                            <div class="col-md-6 ps-md-5 ms-md-5 pb-md-5 mb-md-3 text-center">
+                                <p class="text-uppercase m-1">get&nbsp;inspired&nbsp;by&nbsp;this&nbsp;season's&nbsp;key&nbsp;trends</p>
+                                <p class="text-uppercase">spring&nbsp;in&nbsp;bloom</p>
+                                <button class="text-uppercase rounded-9 py-2 px-5">shop&nbsp;now</button>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+        <!-- end carosel -->
+
+        
     </main>
 
 
@@ -79,17 +609,115 @@
     <script>
         // initialize shopcanvas
         document.querySelector("span.shopcanvas").addEventListener("mouseenter",function(){
+            document.querySelector("div.joinus").style.display="none"
+            document.querySelector("div.menu").style.display="none"
+            document.querySelector("div.ourstory").style.display="none"
+            document.querySelector("div.signup").style.left="-100%"
             document.querySelector("div.shopcanvas").style.display="block"
+            document.querySelector("main").style.filter="blur(2px)"
+
         })
         document.querySelector("div.shopcanvas>div.right").addEventListener("mouseleave",function(){
             this.parentNode.style.display="none"
+            document.querySelector("main").style.filter="blur(0)"
+
         })
         // end shopcanvas
+        // initialize signin
+        document.querySelector("span.signup").addEventListener("click",function(){
+            document.querySelector("div.joinus").style.display="none"
+            document.querySelector("div.menu").style.display="none"
+            document.querySelector("div.shopcanvas").style.display="none"
+            document.querySelector("div.ourstory").style.display="none"
+            document.querySelector("div.signup").style.left="0"
+            document.querySelector("main").style.filter="blur(2px)"
+
+        })
+        document.querySelector("div.signup>div.right").addEventListener("click",function(){
+            document.querySelector("div.signup").style.left="-100%"
+            document.querySelector("main").style.filter="blur(0px)"
+
+        })
+        
+        
+        // end signin
+        // initialize ourstory
+        document.querySelector("p.ourstory").addEventListener("click",function(){
+            document.querySelector("div.joinus").style.display="none"
+            document.querySelector("div.menu").style.display="none"
+            document.querySelector("div.shopcanvas").style.display="none"
+            document.querySelector("div.signup").style.left="-100%"
+            document.querySelector("div.ourstory").style.display="block"
+            document.querySelector("p.ourstory").style.color="#777"
+            document.querySelector("main").style.filter="blur(2px)"
+
+        })
+        document.querySelector("div.ourstory>div.down").addEventListener("click",function(){
+            document.querySelector("div.ourstory").style.display="none"
+            document.querySelector("p.ourstory").style.color="#333"
+            document.querySelector("main").style.filter="blur(0px)"
+
+        })
+        
+        
+        // end ourstory
+        // initialize joinus
+        document.querySelector("p.joinus").addEventListener("click",function(){
+            document.querySelector("div.ourstory").style.display="none"
+            document.querySelector("div.menu").style.display="none"
+            document.querySelector("div.shopcanvas").style.display="none"
+            document.querySelector("div.signup").style.left="-100%"
+            document.querySelector("div.joinus").style.display="block"
+            document.querySelector("p.joinus").style.color="#777"
+            document.querySelector("main").style.filter="blur(2px)"
+
+        })
+        document.querySelector("div.joinus>div.down").addEventListener("click",function(){
+            document.querySelector("div.joinus").style.display="none"
+            document.querySelector("p.joinus").style.color="#333"
+            document.querySelector("main").style.filter="blur(0px)"
+
+        })
+        
+        
+        // end joinus
+        // initialize menu
+        document.querySelector("div.menusign").addEventListener("click",function(){
+            document.querySelector("div.ourstory").style.display="none"
+            document.querySelector("div.shopcanvas").style.display="none"
+            document.querySelector("div.signup").style.left="-100%"
+            document.querySelector("div.menu").style.display="block"
+            document.querySelector("main").style.filter="blur(2px)"
+
+        })
+        document.querySelector("main").addEventListener("click",function(){
+            document.querySelector("div.menu").style.display="none"
+            document.querySelector("main").style.filter="blur(0px)"
+
+        })
+        
+        
+        // end menu
         // initialize vip
         document.querySelector("div.vip>span").addEventListener("click",function(){
             this.parentNode.style.display="none"
         })
         // end vip
+        // initialize green color for signup
+        document.querySelector("div.signup>div.left>form>input.email").addEventListener("focus",function(){
+            document.querySelector("div.signup>div.left>form>label.email").style.color="#68BB93"
+        })
+        document.querySelector("div.signup>div.left>form>input.email").addEventListener("focusout",function(){
+            document.querySelector("div.signup>div.left>form>label.email").style.color="#333"
+        })
+        document.querySelector("div.signup>div.left>form>input.pass").addEventListener("focus",function(){
+            document.querySelector("div.signup>div.left>form>label.pass").style.color="#68BB93"
+        })
+        document.querySelector("div.signup>div.left>form>input.pass").addEventListener("focusout",function(){
+            document.querySelector("div.signup>div.left>form>label.pass").style.color="#333"
+        })
+        //end green color for signup
+
     </script>
     
 </body>

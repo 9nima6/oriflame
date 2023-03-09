@@ -931,12 +931,74 @@
                 </div>
             </div>
         </div>
-
-        
         <!-- end origin -->
-
-        
     </main>
+    <footer>
+        <div class="container-fluid footer">
+            <div class="row first py-4 mb-4">
+                <div class="col-12 col-sm-2 offset-sm-2 d-flex flex-column align-items-sm-start align-items-center justify-content-start eins"><p class="p-20 m-0">Follow us</p><div class="d-flex social">
+                    <div class="face cur"></div>
+                    <div class="tube cur"></div>
+                    <div class="insta cur"></div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-4 offset-sm-1 zwei">
+                    <div class="row"><div class="col-12 text-sm-start text-center"><p class="p-20 mb-2">Newsletter</p></div></div>
+                    <div class="row"><div class="col-12 text-start"><p class="p-12">Sign up today and be the first to get our best deals, latest news and beauty tips.</p></div></div>
+                    <div class="row"><div class="col-12 col-sm-8 text-start">
+                        <form action="#" enctype="multipart/form-data" class="w-100 position-relative greenform">
+                            <label for="email" class="d-block email">Enter&nbsp;your&nbsp;email&nbsp;address&nbsp;<sup>*</sup></label>
+                            <input type="email" id="email" class="mb-3 p-2 w-100 email">
+                        </form>
+                    </div></div>
+                    <div class="row"><div class="col-12 col-sm-8 text-start">
+                        <button class="w-100 text-uppercase rounded-9 subs py-2">subscribe</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row second pb-3 pt-5 px-2 mb-5">
+            <div class="col-12 col-sm-2 offset-sm-2 mb-4">
+                <div class="up w-100 d-flex justify-content-between cur info-c"><p class="p-14">CORPORATE INFO</p><span class="d-sm-none d-block">></span></div>
+                <div class="down w-100 d-sm-block d-none info-show">
+                    <p class="w-100 p-14-no mb-2 green cur">Work With Us</p>
+                    <p class="w-100 p-14-no mb-2 green cur">Who we are</p>
+                    <p class="w-100 p-14-no mb-2 green cur">Sustainability</p>
+                    <p class="w-100 p-14-no mb-2 green cur">Investor Relations</p>
+                    <p class="w-100 p-14-no mb-2 green cur">Oriflame.com</p>
+                </div>
+            </div>
+            <div class="col-12 col-sm-2 offset-sm-1 mb-4">
+                <div class="up w-100 d-flex justify-content-between cur help-c"><p class="p-14">SUPPORT / HELP</p><span class="d-sm-none d-block">></span></div>
+                <div class="down w-100 d-sm-block d-none help-show">
+                    <p class="w-100 p-14-no mb-2 green cur">Support Centre</p>
+                    <p class="w-100 p-14-no mb-2 green cur">Track your order</p>
+                    <p class="w-100 p-14-no mb-2 green cur">Claims & Returns</p>
+                </div>
+            </div>
+            <div class="col-12 col-sm-2 offset-sm-1">
+                <div class="up w-100 d-flex justify-content-between cur discover-c"><p class="p-14">DISCOVER</p><span class="d-sm-none d-block">></span></div>
+                <div class="down w-100 d-sm-block d-none discover-show">
+                    <p class="w-100 p-14-no mb-2 green cur">Join us</p>
+                    <p class="w-100 p-14-no mb-2 green cur">eCatalogue</p>
+                </div>
+            </div>
+        </div>
+        <div class="row text-center mb-5">
+            <div class="col-12 col-sm-6 offset-sm-3">
+                <p class="p-12-no">Oriflame is a leading beauty company selling direct. We are present in more than 60 countries, of which we are the market leader in more than a half. Oriflame has its origin in Sweden with corporate offices in Switzerland. We offer a wide range of high-quality beauty products as well as a unique opportunity to join our sales force and start your own business.</p>
+            </div>
+        </div>
+        <div class="row text-center mb-5">
+            <div class="col-12 col-sm-6 offset-sm-3 ">
+                <p class="p-12-no w-100 mb-1">Copyright © 2023 Oriflame Cosmetics Global SA. All rights reserved.</p>
+                <div class="d-flex align-items-center justify-content-center">     
+                    <p class="p-12-no  text-decoration-underline hover3 cur me-3">Terms and Conditions for VIP Customers</p>
+                    <p class="p-12-no  text-decoration-underline hover3 cur">Terms and Conditions for Brand Partners</p>
+                </div>
+            </div>
+        </div>
+    </footer>
     <script src="mdb-ui-kit/js/mdb.min.js"></script>
     <script>
         // initialize shopcanvas
@@ -1048,8 +1110,59 @@
         document.querySelector("div.signup>div.left>form>input.pass").addEventListener("focusout",function(){
             document.querySelector("div.signup>div.left>form>label.pass").style.color="#333"
         })
-        //end green color for signup
-
+        // end green color for signup
+        // initialize  green color for newsletter
+        document.querySelector("form.greenform>input.email").addEventListener("focus",function(){
+            document.querySelector("form.greenform>label.email").style.color="#68BB93"
+        })
+        document.querySelector("form.greenform>input.email").addEventListener("focusout",function(){
+            document.querySelector("form.greenform>label.email").style.color="#333"
+        })
+        // end  green color for newsletter
+        // initialize footer sm show
+        document.querySelector("div.info-c").addEventListener("click",function(){
+            document.querySelector("div.info-show").classList.toggle("d-none")
+            document.querySelector("div.info-c>p").classList.toggle("show-green")
+            document.querySelector("div.info-c>span").classList.toggle("show-green")
+            document.querySelector("div.info-c>span").classList.toggle("rotate")
+            document.querySelector("div.help-show").classList.add("d-none")
+            document.querySelector("div.discover-show").classList.add("d-none")
+            document.querySelector("div.help-c>p").classList.remove("show-green")
+            document.querySelector("div.help-c>span").classList.remove("rotate")
+            document.querySelector("div.help-c>span").classList.remove("show-green") 
+            document.querySelector("div.discover-c>p").classList.remove("show-green")
+            document.querySelector("div.discover-c>span").classList.remove("show-green")
+            document.querySelector("div.discover-c>span").classList.remove("rotate")
+        })
+        document.querySelector("div.help-c").addEventListener("click",function(){
+            document.querySelector("div.help-show").classList.toggle("d-none")
+            document.querySelector("div.help-c>p").classList.toggle("show-green")
+            document.querySelector("div.help-c>span").classList.toggle("rotate")
+            document.querySelector("div.help-c>span").classList.toggle("show-green")
+            document.querySelector("div.discover-show").classList.add("d-none")
+            document.querySelector("div.info-show").classList.add("d-none")
+            document.querySelector("div.discover-c>p").classList.remove("show-green")
+            document.querySelector("div.discover-c>span").classList.remove("show-green")
+            document.querySelector("div.discover-c>span").classList.remove("rotate")  
+            document.querySelector("div.info-c>p").classList.remove("show-green")
+            document.querySelector("div.info-c>span").classList.remove("show-green")
+            document.querySelector("div.info-c>span").classList.remove("rotate")
+        })
+        document.querySelector("div.discover-c").addEventListener("click",function(){
+            document.querySelector("div.discover-show").classList.toggle("d-none")
+            document.querySelector("div.discover-c>p").classList.toggle("show-green")
+            document.querySelector("div.discover-c>span").classList.toggle("show-green")
+            document.querySelector("div.discover-c>span").classList.toggle("rotate")
+            document.querySelector("div.help-show").classList.add("d-none")
+            document.querySelector("div.info-show").classList.add("d-none")      
+            document.querySelector("div.info-c>p").classList.remove("show-green")
+            document.querySelector("div.info-c>span").classList.remove("show-green")
+            document.querySelector("div.info-c>span").classList.remove("rotate")           
+            document.querySelector("div.help-c>p").classList.remove("show-green")
+            document.querySelector("div.help-c>span").classList.remove("rotate")
+            document.querySelector("div.help-c>span").classList.remove("show-green") 
+        })
+        // end footer sm show
     </script>
     
 </body>

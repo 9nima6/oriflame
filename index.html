@@ -50,21 +50,16 @@
         <!-- initialize shopcanvas -->
         <div class="shopcanvas position-fixed">
             <div class="left position-fixed"></div>
-            <div class="right position-fixed container-fluid p-3 d-flex flex-column justify-content-between">
-                <div class="row">
-                    <div class="col-12 bag"><p class="cur">Shopping&nbsp;bag&nbsp;( 0 )</p></div>
+            <div class="right position-absolute container-fluid p-3 d-flex flex-column justify-content-between">               
+                <div class="bag"><p class="cur">Shopping&nbsp;bag&nbsp;( 0 )</p></div>              
+                <div class="empty">
+                    <p class="m-0">Empty&nbsp;bag</p>
+                    <p>-&nbsp;Looking&nbsp;pretty&nbsp;empty&nbsp;in&nbsp;your&nbsp;bag&nbsp;-</p>
+                </div>                          
+                <div>
+                    <button class="btn text-uppercase w-100 rounded-9 p-3">go&nbsp;to&nbsp;basket</button>
                 </div>
-                <div class="row">
-                    <div class="empty col-12 text-center">
-                        <p class="m-0">Empty&nbsp;bag</p>
-                        <p>-&nbsp;Looking&nbsp;pretty&nbsp;empty&nbsp;in&nbsp;your&nbsp;bag&nbsp;-</p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-12">
-                        <button class="btn text-uppercase w-100 rounded-9 p-3">go&nbsp;to&nbsp;basket</button>
-                    </div>
-                </div>
+            
             </div>
         </div>
         <!-- end shopcanvas -->
